@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>who_the_heck</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">who_the_heck</span>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="mb-3">Find Out Who Doesn't Follow You Back</h2>
+        <form action="/" method="post" enctype="multipart/form-data" class="mb-3">
+            <div class="form-group">
+                <label for="followers_file">Followers File:</label>
+                <input type="file" class="form-control-file" id="followers_file" name="followers_file" required>
+            </div>
+            <div class="form-group">
+                <label for="following_file">Following File:</label>
+                <input type="file" class="form-control-file" id="following_file" name="following_file" required>
+            </div>
+            <div class="form-group">
+                <label for="option">Select Analysis Type:</label>
+                <select class="form-control" id="option" name="option">
+                    <option value="sigo_e_me_segue">I follow & follows me</option>
+                    <option value="sigo_e_nao_me_segue">I follow & doesn't follow me</option>
+                    <option value="nao_sigo_e_me_segue">Doesn't follow & follows me</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Analyze</button>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

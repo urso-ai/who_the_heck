@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Analysis</title>
+</head>
+
+<body>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="followers_file">Followers File:</label>
+        <input type="file" id="followers_file" name="followers_file" required>
+
+        <label for="following_file">Following File:</label>
+        <input type="file" id="following_file" name="following_file" required>
+
+        <select name="option">
+            <option value="sigo_e_me_segue">Sigo e me segue</option>
+            <option value="sigo_e_nao_me_segue">Sigo e não me segue</option>
+            <option value="nao_sigo_e_me_segue">Não sigo e me segue</option>
+        </select>
+
+        <button type="submit">Analisar</button>
+    </form>
+</body>
+
+</html>
